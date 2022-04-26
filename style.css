@@ -1,0 +1,401 @@
+/*****
+FONTS
+*****/
+
+
+@import url('http://fonts.cdnfonts.com/css/cheria');
+
+
+
+
+@import url('http://fonts.cdnfonts.com/css/betterfly');
+
+@import url('http://fonts.cdnfonts.com/css/crimson-text?styles=17617,17616,17618,17619,17614,17615');
+
+
+/* setting css */
+
+:root {
+
+    --clr-text: #807d7d;
+    --clr-dark-text: #484545;
+    --clr-primary: #0b600e;
+    --clr-dark-primary: #1a471c;
+    --clr-accent: #764981;
+    --clr-dark-accent: #45254e;
+
+
+
+    --ff-title: 'cheria', sans-serif;
+    --ff-serif: "Crimson Text", serif;
+    --ff-logo: "BetterFly", sans-serif;
+
+}
+
+
+/*****
+  Border Box
+  *****/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-serif);
+    color: var(--clr-text);
+    font-size: 1.25rem;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+h3,
+p {
+    margin: 0;
+
+}
+
+
+h2,
+h3 {
+
+    font-family: var(--ff-title);
+    line-height: 0.8;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    margin-bottom: 0.85em;
+}
+
+
+
+.section-title-small {
+    font-size: 3rem;
+
+}
+
+
+.text-primary {
+    color: var(--clr-primary);
+}
+
+
+/* logo */
+
+
+.logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+header {
+    padding: 1em 0 2em 0;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav ul {
+    display: flex;
+    width: 50%;
+    margin-left: 0;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul a {
+    color: var(--clr-primary);
+    text-decoration: none;
+    padding: 0.5em;
+
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    color: var(--clr-accent);
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+
+
+
+/* HomePage Styles/ hero section */
+
+.hero {
+    background-color: #333;
+    background-image: url('img/pic1.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    text-align: center;
+    color: white;
+    padding: 25vh 0;
+
+}
+
+
+/* intro section */
+
+.intro {
+    text-align: center;
+
+}
+
+/* about us section */
+
+.about-us {
+    background: var(--clr-accent);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+
+.about-us__intro {
+    background-color: #775b7e;
+    background-image: url('img/Granola.jpg');
+    background-blend-mode: multiply;
+    text-align: center;
+    padding: 3em 1em 1.5em;
+
+}
+
+.section-title-small small {
+    font-size: 0.7em;
+    display: block;
+
+
+}
+
+.about-us__body {
+    padding: 1.5em 1em 3em;
+}
+
+
+/* order section */
+.order-online {
+    background-color: rgb(236, 233, 225);
+}
+
+
+
+/* order buttons */
+.btn-group {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.btn {
+    padding: 0.75em 2.5em;
+    text-decoration: none;
+    color: white;
+    background-color: #0b600e;
+    border: 2px solid green;
+    margin: 0.2em 0em;
+    border-radius: 0.4em;
+
+
+}
+
+
+
+/* direct sibling +direct sibling then give margin to second one, first one will not effect by margin */
+
+
+/* product section */
+.products {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+
+.product {
+
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 .5em black;
+    margin-bottom: 0.5em
+}
+
+.product__content {
+    padding: 1.5em;
+}
+
+.product-title {
+    columns: var(--clr-primary);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+/* product buttons */
+
+.btn-accent {
+    background: var(--clr-accent);
+    margin-bottom: 1.5em
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background: var(--clr-dark-accent);
+}
+
+.btn-primary:hover,
+.btn-primary:hover {
+    background-color: var(--clr-dark-primary)
+}
+
+/* footer section */
+
+footer {
+    background: rgb(204, 201, 201);
+    padding: 3em 1em;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-nav {
+
+    list-style: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--clr-primary);
+
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: var(--clr-accent);
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+
+.social-font {
+    font-size: 3rem;
+    display: block;
+    color: black;
+}
+
+.footer {
+    margin-top: 1rem;
+}
+
+@media (min-width:750px) {
+
+    section {
+        padding: 6em 1em;
+    }
+
+    .btn-group {
+        flex-direction: row;
+
+    }
+
+    .btn+.btn {
+        margin-left: 0.5em;
+    }
+
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us__intro,
+    .about-us__body {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 50%;
+        padding: 3em 1em;
+        justify-content: center;
+
+    }
+
+    .order-online {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .order-online>* {
+        max-width: 30rem;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .products {
+        flex-direction: row;
+        max-width: 1200px;
+    }
+
+    .product {
+        margin: 0;
+
+
+    }
+
+    .product+.product {
+        margin-left: 1em;
+    }
+
+}
